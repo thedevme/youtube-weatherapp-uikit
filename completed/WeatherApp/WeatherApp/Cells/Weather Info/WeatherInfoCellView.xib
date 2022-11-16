@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kollektif-Bold.ttf">
+            <string>Kollektif-Bold</string>
+        </array>
+        <array key="Kollektif.ttf">
+            <string>Kollektif</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WeatherInfoCellView" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-d9-1HB">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Amf-VL-ikG">
+                                <rect key="frame" x="0.0" y="0.0" width="431" height="68"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="z8C-yF-rnd"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="EdU-aE-X8q">
+                                <rect key="frame" x="8" y="4" width="415" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-Ay-tmX">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="27"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="gmi-AP-SSE">
+                                                <rect key="frame" x="0.0" y="0.0" width="197.5" height="27"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6L-Bt-049">
+                                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="252" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KO-iS-bbR">
+                                                        <rect key="frame" x="161.5" y="0.0" width="36" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="36" id="PKU-aY-7Pc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="bvM-W2-JxS"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rd9-R8-aBN">
+                                                <rect key="frame" x="217.5" y="0.0" width="197.5" height="27"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leu-KW-gVJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST2-PS-4NS">
+                                                        <rect key="frame" x="161.5" y="0.0" width="36" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="36" id="qGR-Ha-scm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="EKP-rX-sSo"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="A6b-sp-0CH"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="yR6-rE-bpX">
+                                        <rect key="frame" x="0.0" y="33" width="415" height="27"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-Mq-DD5">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="27"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3N-E2-eBb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="143" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="252" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZg-ax-QZo">
+                                                        <rect key="frame" x="161" y="0.0" width="36" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="36" id="6UI-0h-Jb9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="qUe-9y-Vi0"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eVm-Tf-dW2">
+                                                <rect key="frame" x="218" y="0.0" width="197" height="27"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM6-NB-tlh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="143" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUt-y0-ocV">
+                                                        <rect key="frame" x="161" y="0.0" width="36" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="36" id="Fdh-bs-WXo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="6Rj-af-ySY"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="xHg-26-zMX"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dJp-Ay-tmX" secondAttribute="trailing" id="5PH-Md-cjx"/>
+                                    <constraint firstAttribute="trailing" secondItem="yR6-rE-bpX" secondAttribute="trailing" id="fUa-kH-DLn"/>
+                                    <constraint firstItem="dJp-Ay-tmX" firstAttribute="leading" secondItem="EdU-aE-X8q" secondAttribute="leading" id="jQp-HO-sn4"/>
+                                    <constraint firstItem="yR6-rE-bpX" firstAttribute="leading" secondItem="EdU-aE-X8q" secondAttribute="leading" id="qhi-J6-diV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EdU-aE-X8q" secondAttribute="bottom" constant="4" id="B12-co-aRH"/>
+                            <constraint firstItem="EdU-aE-X8q" firstAttribute="top" secondItem="nJg-d9-1HB" secondAttribute="top" constant="4" id="BmH-4a-oLj"/>
+                            <constraint firstItem="Amf-VL-ikG" firstAttribute="top" secondItem="nJg-d9-1HB" secondAttribute="top" id="Eru-Gc-yWG"/>
+                            <constraint firstAttribute="trailing" secondItem="EdU-aE-X8q" secondAttribute="trailing" constant="8" id="MEx-Ny-xqS"/>
+                            <constraint firstItem="Amf-VL-ikG" firstAttribute="leading" secondItem="nJg-d9-1HB" secondAttribute="leading" id="P1M-jk-wG5"/>
+                            <constraint firstItem="EdU-aE-X8q" firstAttribute="leading" secondItem="nJg-d9-1HB" secondAttribute="leading" constant="8" id="or2-IM-GGh"/>
+                            <constraint firstAttribute="trailing" secondItem="Amf-VL-ikG" secondAttribute="trailing" id="q3L-Bl-0sw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nJg-d9-1HB" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="G30-e2-KTI"/>
+                <constraint firstAttribute="trailing" secondItem="nJg-d9-1HB" secondAttribute="trailing" id="UWy-eP-VIX"/>
+                <constraint firstItem="nJg-d9-1HB" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VEj-04-gp8"/>
+                <constraint firstItem="nJg-d9-1HB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ek8-Df-NF5"/>
+            </constraints>
+            <size key="customSize" width="431" height="74"/>
+            <connections>
+                <outlet property="imgGrid" destination="Amf-VL-ikG" id="aFh-Rs-2wz"/>
+                <outlet property="lblFirstSubtitle" destination="0KO-iS-bbR" id="64u-i0-j4Y"/>
+                <outlet property="lblFirstTitle" destination="N6L-Bt-049" id="k0O-wB-PJA"/>
+                <outlet property="lblFourthSubtitle" destination="iUt-y0-ocV" id="hyc-lg-1h3"/>
+                <outlet property="lblFourthTitle" destination="GM6-NB-tlh" id="6BZ-QQ-5Uo"/>
+                <outlet property="lblSecondSubtitle" destination="ST2-PS-4NS" id="Hw3-8U-ST5"/>
+                <outlet property="lblSecondTitle" destination="Leu-KW-gVJ" id="she-rT-KUv"/>
+                <outlet property="lblThirdSubtitle" destination="kZg-ax-QZo" id="KZg-as-fPz"/>
+                <outlet property="lblThirdTitle" destination="t3N-E2-eBb" id="z8a-95-Aor"/>
+            </connections>
+            <point key="canvasLocation" x="387.68115942028987" y="105.80357142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="grid" width="337" height="70"/>
+    </resources>
+</document>

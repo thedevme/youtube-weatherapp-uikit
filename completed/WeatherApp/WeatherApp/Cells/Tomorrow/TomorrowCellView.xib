@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kollektif-Bold.ttf">
+            <string>Kollektif-Bold</string>
+        </array>
+        <array key="Kollektif.ttf">
+            <string>Kollektif</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TomorrowCellView" customModule="StarterApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="588" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="588" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainy" translatesAutoresizingMaskIntoConstraints="NO" id="ND8-1k-klq">
+                        <rect key="frame" x="220" y="0.0" width="148" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="148" id="9qw-PC-1yP"/>
+                            <constraint firstAttribute="width" constant="148" id="G8e-Dx-woy"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-UX-ZOt">
+                        <rect key="frame" x="388" y="52.5" width="190" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-QB-Hlw">
+                                <rect key="frame" x="25" y="29" width="165" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="PdY-2D-ayS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="96" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-QO-zhO">
+                                <rect key="frame" x="0.0" y="0.0" width="39" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="KKV-t9-NJ6"/>
+                                    <constraint firstAttribute="height" constant="33" id="dmP-Gy-MLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0To-hk-ag1">
+                                <rect key="frame" x="39" y="15" width="151" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="LQB-JT-sxh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nqm-QB-Hlw" secondAttribute="trailing" id="1BA-UP-5Um"/>
+                            <constraint firstItem="Nqm-QB-Hlw" firstAttribute="leading" secondItem="uHl-UX-ZOt" secondAttribute="leading" constant="25" id="2Yo-yj-Shy"/>
+                            <constraint firstAttribute="trailing" secondItem="0To-hk-ag1" secondAttribute="trailing" id="2ur-l1-RM1"/>
+                            <constraint firstItem="YLa-QO-zhO" firstAttribute="top" secondItem="uHl-UX-ZOt" secondAttribute="top" id="EMr-VN-iEN"/>
+                            <constraint firstAttribute="height" constant="43" id="Sfh-Nd-eRx"/>
+                            <constraint firstItem="0To-hk-ag1" firstAttribute="top" secondItem="uHl-UX-ZOt" secondAttribute="top" constant="15" id="aRr-aQ-nlw"/>
+                            <constraint firstItem="YLa-QO-zhO" firstAttribute="leading" secondItem="uHl-UX-ZOt" secondAttribute="leading" id="d21-Bn-xO0"/>
+                            <constraint firstItem="Nqm-QB-Hlw" firstAttribute="top" secondItem="0To-hk-ag1" secondAttribute="bottom" id="f9j-jN-aKm"/>
+                            <constraint firstItem="0To-hk-ag1" firstAttribute="leading" secondItem="YLa-QO-zhO" secondAttribute="trailing" id="o0e-7i-daS"/>
+                            <constraint firstItem="Nqm-QB-Hlw" firstAttribute="top" secondItem="0To-hk-ag1" secondAttribute="bottom" id="tGe-gl-TYr"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9f-fZ-0da">
+                        <rect key="frame" x="10" y="48" width="190" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Nov," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX5-eh-gmw">
+                                <rect key="frame" x="0.0" y="24" width="190" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="1uF-Xs-pmz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomorrow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXb-tt-mIl">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="5bR-JX-ZI7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif-Bold" family="Kollektif" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bo3-hM-zy3">
+                                <rect key="frame" x="0.0" y="38" width="190" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="BQi-dS-tZW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bo3-hM-zy3" firstAttribute="top" secondItem="MX5-eh-gmw" secondAttribute="bottom" id="0IV-JJ-pie"/>
+                            <constraint firstAttribute="trailing" secondItem="bo3-hM-zy3" secondAttribute="trailing" id="BQW-Tv-NI3"/>
+                            <constraint firstAttribute="bottom" secondItem="bo3-hM-zy3" secondAttribute="bottom" id="Fd8-gS-R7R"/>
+                            <constraint firstItem="OXb-tt-mIl" firstAttribute="leading" secondItem="e9f-fZ-0da" secondAttribute="leading" id="Lgy-eh-XYt"/>
+                            <constraint firstItem="OXb-tt-mIl" firstAttribute="top" secondItem="e9f-fZ-0da" secondAttribute="top" id="Ryn-9A-mJw"/>
+                            <constraint firstAttribute="height" constant="52" id="SnA-NX-wbQ"/>
+                            <constraint firstItem="MX5-eh-gmw" firstAttribute="leading" secondItem="e9f-fZ-0da" secondAttribute="leading" id="eEE-Cg-Bzh"/>
+                            <constraint firstAttribute="trailing" secondItem="MX5-eh-gmw" secondAttribute="trailing" id="man-kF-XRW"/>
+                            <constraint firstAttribute="trailing" secondItem="OXb-tt-mIl" secondAttribute="trailing" id="nyf-tR-qvR"/>
+                            <constraint firstItem="bo3-hM-zy3" firstAttribute="leading" secondItem="e9f-fZ-0da" secondAttribute="leading" id="zV7-Ew-3WL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="e9f-fZ-0da" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JRp-rS-4Yx"/>
+                <constraint firstItem="uHl-UX-ZOt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NRV-3f-jht"/>
+                <constraint firstItem="ND8-1k-klq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="U8J-L9-qhr"/>
+                <constraint firstAttribute="trailing" secondItem="uHl-UX-ZOt" secondAttribute="trailing" constant="10" id="Yqh-bx-qjN"/>
+                <constraint firstItem="uHl-UX-ZOt" firstAttribute="leading" secondItem="ND8-1k-klq" secondAttribute="trailing" constant="20" id="ezv-mh-B3j"/>
+                <constraint firstItem="e9f-fZ-0da" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="jKE-2B-xGG"/>
+                <constraint firstItem="ND8-1k-klq" firstAttribute="leading" secondItem="e9f-fZ-0da" secondAttribute="trailing" constant="20" id="nt3-0q-kOQ"/>
+                <constraint firstItem="ND8-1k-klq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="st6-yh-iWI"/>
+            </constraints>
+            <size key="customSize" width="588" height="144"/>
+            <point key="canvasLocation" x="-105.79710144927537" y="90.401785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rainy" width="512" height="513"/>
+    </resources>
+</document>
